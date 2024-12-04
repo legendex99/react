@@ -1,0 +1,138 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.App-header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  animation: bootLoop 10s infinite;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  animation: fadeIn 5s ease-out;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+#booking-form {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+#booking-form h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideInTop 1s ease-out;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  animation: fadeInUp 1s ease-out;
+}
+
+#confirmation {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2em;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Boot Loop Animation for the header */
+@keyframes bootLoop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
